@@ -30,10 +30,15 @@ namespace TASK_1
             var task5Result = Task5.GuestSorter(str: s);
             Console.WriteLine("Unsorted guests: " + s + "\nSorted guests: "+task5Result);
             Console.WriteLine("\n Additional Exercise 1:");
-            int numberResult = AdditionalTask1.FindBigCombination(3049);
-            Console.WriteLine("3049 => " + numberResult);
-            numberResult = AdditionalTask1.FindBigCombination(321);
-            Console.WriteLine("321 => " + numberResult);
+            int additionalTask1Result = AdditionalTask1.FindBigCombination(3049);
+            Console.WriteLine("3049 => " + additionalTask1Result);
+            additionalTask1Result = AdditionalTask1.FindBigCombination(321);
+            Console.WriteLine("321 => " + additionalTask1Result);
+            Console.WriteLine("\n Additional Exercise 2:");
+            string additionalTask2Result = AdditionalTask2.ReturnAdress(2149583361);
+            Console.WriteLine(2149583361 + " ==> " + additionalTask2Result);
+            additionalTask2Result = AdditionalTask2.ReturnAdress(32);
+            Console.WriteLine(32 + " ==> " + additionalTask2Result);
         }
     }
 }
