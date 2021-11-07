@@ -26,9 +26,14 @@ namespace TASK_1
             var task4Result = Task4.CountPairs(arr: new int[] { 1, 3, 5, 2, 6, 0 }, number: 6);
             Console.WriteLine("From { 1, 3, 5, 2, 6, 0 } we can create 6 from " + task4Result + " pairs");
             Console.WriteLine("\n Exercise 5:");
-            var s = "Fred:Corwill;Wilfred:Corwill;Barney:TornBull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill";
+            string s = "Fred:Corwill;Wilfred:Corwill;Barney:TornBull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill";
             var task5Result = Task5.GuestSorter(str: s);
             Console.WriteLine("Unsorted guests: " + s + "\nSorted guests: "+task5Result);
+            Console.WriteLine("\n Additional Exercise 1:");
+            int numberResult = AdditionalTask1.FindBigCombination(3049);
+            Console.WriteLine("3049 => " + numberResult);
+            numberResult = AdditionalTask1.FindBigCombination(321);
+            Console.WriteLine("321 => " + numberResult);
         }
     }
 }
