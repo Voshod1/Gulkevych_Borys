@@ -20,8 +20,8 @@ namespace TASK_1
             task2Result = Task2.first_non_repeating_letter(line: "dDiGItS");
             Console.WriteLine("dDiGItS first non repeating => " + task2Result);
             Console.WriteLine("\n Exercise 3:");
-            var task3Result = Task3.DigitalRoot(num: 4213);
-            Console.WriteLine("Digital root for 4213 is " + task3Result);
+            var task3Result = Task3.DigitalRoot(num: 1234567);
+            Console.WriteLine("Digital root for 1234567 is " + task3Result);
             Console.WriteLine("\n Exercise 4:");
             var task4Result = Task4.CountPairs(arr: new int[] { 1, 3, 5, 2, 6, 0 }, number: 6);
             Console.WriteLine("From { 1, 3, 5, 2, 6, 0 } we can create 6 from " + task4Result + " pairs");

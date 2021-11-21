@@ -13,8 +13,8 @@ namespace TASK_1
         [Test]
         public static void Test1()
         {
-            uint testNum = 1668;
-            Assert.AreEqual(21, DigitalRoot(testNum));
+            uint testNum = 493193;
+            Assert.AreEqual(2, DigitalRoot(testNum));
         }
         [Test]
         public static void Test2()
@@ -39,6 +39,10 @@ namespace TASK_1
                     i++;
                 }
                 sum += intPartOfNumber + DigitalRoot(num % (uint)Convert.ToInt32(Math.Pow(10, i)));
+            }
+            if (sum>9)
+            {
+                sum = DigitalRoot(sum);
             }
             return sum;
         }
