@@ -24,22 +24,7 @@ namespace TASK_1
         }
         public static uint DigitalRoot(uint num)
         {
-            uint intPartOfNumber = num / 10;
-            uint sum = 0;
-            if (intPartOfNumber == 0)
-            {
-                sum += num;
-            }
-            else
-            {
-                uint i = 1;
-                while (intPartOfNumber >= 10)
-                {
-                    intPartOfNumber /= 10;
-                    i++;
-                }
-                sum += intPartOfNumber + DigitalRoot(num % (uint)Convert.ToInt32(Math.Pow(10, i)));
-            }
+            uint sum = (uint)num.ToString().ToCharArray().Sum(digit => digit - '0');
             if (sum>9)
             {
                 sum = DigitalRoot(sum);
@@ -48,3 +33,5 @@ namespace TASK_1
         }
     }
 }
+
+
