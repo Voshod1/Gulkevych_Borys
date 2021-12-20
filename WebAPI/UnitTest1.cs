@@ -2,6 +2,7 @@
 
 namespace WebAPI
 {
+    [TestFixture]
     public class Tests
     {
         [SetUp]
