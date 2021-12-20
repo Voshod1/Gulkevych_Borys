@@ -31,12 +31,6 @@ namespace WebAPI
                 {"Content-Type", "application/json"},
                 {"Authorization", "Bearer Z4Rm6oxQw5oAAAAAAAAAAQLjWTEydjKQb3Sq95MvmvVYtps9ENu3YbSwYhVkJzLK" }
             };
-            /*var body = @"{" + "\n" +
-                      $@"    ""path"": ""/homework/Newfile.txt""," + "\n" +
-                       @"    ""include_media_info"":  false," + "\n" +
-                       @"    ""include_deleted"": false," + "\n" +
-                       @"    ""include_has_explicit_shared_members"": false" + "\n"+
-                       @"}";*/
             Dictionary<string, string> body = new Dictionary<string, string>()
             {
                 {"path", "/homework/Newfile.txt"}

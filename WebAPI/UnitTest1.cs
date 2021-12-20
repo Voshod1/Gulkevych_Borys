@@ -12,29 +12,23 @@ namespace WebAPI
         [Test]
         public void Test1()
         {
-            var t = new RequestMaker();
-            var  upl = t.upload();
+            var request = new RequestMaker();
+            var  upl = request.upload();
             Assert.IsTrue(upl.IsSuccessful, upl.Content);
         }
         [Test]
         public void Test2()
         {
-            var t = new RequestMaker();
-            var upl = t.get_file_metadata();
+            var request = new RequestMaker();
+            var upl = request.get_file_metadata();
             Assert.IsTrue(upl.IsSuccessful, upl.Content);
         }
         [Test]
         public void Test3()
         {
-            var t = new RequestMaker();
-            var upl = t.delete();
+            var request = new RequestMaker();
+            var upl = request.delete();
             Assert.IsTrue(upl.IsSuccessful, upl.Content);
         }
-    }
-    public class IdParse
-    {
-        public string id { get; set; }
-        public string error_summary { get; set; }
-
     }
 }
